@@ -1,0 +1,74 @@
+body {
+  -webkit-tap-highlight-color: transparent
+}
+
+.page-header {
+  min-height: 410px
+}
+
+.page-header h3 {
+  display: none;
+}
+
+.page-header-logo {
+  width: 350px
+}
+
+.content-container {
+  margin: 0;
+}
+
+.content-container.content-ficha 
+  .content-body {
+  padding: 20px;
+  text-align: justify; 
+}
+
+.page-navbar {
+  width: 100%;
+  border-radius: 0;
+}
+
+.page-navbar a:hover {
+  background: initial
+}
+
+.page-navbar a:active {
+  background: #111
+}
+
+.content-body.content-home {
+  column-count: 1;
+  padding: 4px;
+}
+
+.footer-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-login {
+  width: 95%;
+}
+
+.form-ficha {
+  width: 100%;
+}
+
+.card-container {
+  column-count: 1
+}
+
+.form-group {
+  flex-direction: column;
+}
+
+.form-group div {
+  margin-right: 0;
+  flex: 1;
+}
+
+.form-control {
+  width: 100% !important;
+}
