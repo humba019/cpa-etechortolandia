@@ -17,6 +17,7 @@ $usu=$pesquisausu->fetch(PDO::FETCH_ASSOC);
 
 if (($_SESSION["nome"]==$usu['loginUsuario'])&&($_SESSION["senha"]==$usu['senhaUsuario'])&&($_SESSION["tipo"]=="aluno")) {
 	unset($_SESSION["acesso-negado"]);
+	header('Location: solicitar.php');
 }else if(($_SESSION["nome"]==$usu['loginUsuario'])&&($_SESSION["senha"]==$usu['senhaUsuario'])&&($_SESSION["tipo"]=="professor")) {
 	unset($_SESSION["acesso-negado"]);
 	header('Location: leitura.php');
